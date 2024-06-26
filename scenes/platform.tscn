@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://i5quhh3146cp"]
+
+[ext_resource type="Texture2D" uid="uid://br623r2umaydw" path="res://assets/sprites/four-seasons-tileset.png" id="1_46drl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tjjou"]
+size = Vector2(36, 6)
+
+[node name="Platform" type="AnimatableBody2D"]
+position = Vector2(135, 63)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.19209e-07, -2.38419e-07)
+scale = Vector2(2.57143, 0.590909)
+texture = ExtResource("1_46drl")
+region_enabled = true
+region_rect = Rect2(1, 1, 14, 11)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_tjjou")
+one_way_collision = true
