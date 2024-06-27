@@ -10,3 +10,4 @@ script = ExtResource("1_hxp3t")
 one_shot = true
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
