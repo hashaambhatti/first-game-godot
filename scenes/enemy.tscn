@@ -1,22 +1,22 @@
-[gd_scene load_steps=9 format=3 uid="uid://c8ujej2vwh18p"]
+[gd_scene load_steps=9 format=3 uid="uid://bt3wwndgjxqdm"]
 
-[ext_resource type="Texture2D" uid="uid://cbe1tqnjmooo4" path="res://assets/sprites/slime-spritesheet.png" id="1_5c6h7"]
-[ext_resource type="PackedScene" uid="uid://8e16c3mbe64g" path="res://scenes/killzone.tscn" id="2_tg2h8"]
+[ext_resource type="Texture2D" uid="uid://cbe1tqnjmooo4" path="res://assets/sprites/slime-spritesheet.png" id="1_101ar"]
+[ext_resource type="PackedScene" uid="uid://8e16c3mbe64g" path="res://scenes/killzone.tscn" id="2_e3lps"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_04qea"]
-atlas = ExtResource("1_5c6h7")
+atlas = ExtResource("1_101ar")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ewl5v"]
-atlas = ExtResource("1_5c6h7")
+atlas = ExtResource("1_101ar")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_clrjc"]
-atlas = ExtResource("1_5c6h7")
+atlas = ExtResource("1_101ar")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7otgp"]
-atlas = ExtResource("1_5c6h7")
+atlas = ExtResource("1_101ar")
 region = Rect2(96, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_f8rpy"]
@@ -39,17 +39,20 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_d3mtq"]
-radius = 8.0
+[sub_resource type="CircleShape2D" id="CircleShape2D_tmjwo"]
+radius = 5.0
 
-[node name="enemy" type="Node2D"]
+[node name="slime" type="Node2D"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -8)
+position = Vector2(-2, -5)
+scale = Vector2(0.6875, 0.5625)
 sprite_frames = SubResource("SpriteFrames_f8rpy")
-frame_progress = 0.865021
+autoplay = "default"
+frame_progress = 0.252462
 
-[node name="killzone" parent="." instance=ExtResource("2_tg2h8")]
+[node name="killzone" parent="." instance=ExtResource("2_e3lps")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
-shape = SubResource("CircleShape2D_d3mtq")
+position = Vector2(0, -1)
+shape = SubResource("CircleShape2D_tmjwo")

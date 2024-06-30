@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://i7vonnu58ilx"]
+[gd_scene load_steps=13 format=3 uid="uid://i7vonnu58ilx"]
 
 [ext_resource type="PackedScene" uid="uid://cvtciywkqo1bw" path="res://scenes/player.tscn" id="1_kwe67"]
 [ext_resource type="Texture2D" uid="uid://br623r2umaydw" path="res://assets/sprites/four-seasons-tileset.png" id="2_8cew6"]
 [ext_resource type="PackedScene" uid="uid://i5quhh3146cp" path="res://scenes/platform.tscn" id="3_rxexw"]
 [ext_resource type="PackedScene" uid="uid://shupuft6gwd6" path="res://scenes/coin.tscn" id="4_4h6yv"]
 [ext_resource type="PackedScene" uid="uid://8e16c3mbe64g" path="res://scenes/killzone.tscn" id="5_eapgy"]
+[ext_resource type="PackedScene" uid="uid://bt3wwndgjxqdm" path="res://scenes/enemy.tscn" id="6_w87j4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gv55n"]
 texture = ExtResource("2_8cew6")
@@ -569,3 +570,12 @@ libraries = {
 "": SubResource("AnimationLibrary_53se6")
 }
 autoplay = "move diagonal"
+
+[node name="enemy" parent="." instance=ExtResource("6_w87j4")]
+position = Vector2(311, 13)
+
+[node name="enemy2" parent="." instance=ExtResource("6_w87j4")]
+position = Vector2(617, -69)
+
+[node name="enemy3" parent="." instance=ExtResource("6_w87j4")]
+position = Vector2(824, -37)
