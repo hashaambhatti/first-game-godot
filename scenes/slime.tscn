@@ -47,7 +47,7 @@ radius = 5.0
 script = ExtResource("1_8g3x2")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-2, -5)
+position = Vector2(2, -4)
 scale = Vector2(0.6875, 0.5625)
 sprite_frames = SubResource("SpriteFrames_f8rpy")
 autoplay = "default"
@@ -57,11 +57,16 @@ flip_h = true
 [node name="killzone" parent="." instance=ExtResource("2_yhqio")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone"]
-position = Vector2(0, -1)
 shape = SubResource("CircleShape2D_tmjwo")
 
 [node name="RCRight" type="RayCast2D" parent="."]
-target_position = Vector2(10, 0)
+target_position = Vector2(11, 0)
 
 [node name="RCLeft" type="RayCast2D" parent="."]
 target_position = Vector2(-11, 0)
+
+[node name="RCUp" type="RayCast2D" parent="."]
+target_position = Vector2(0, -8)
+
+[node name="RCDown" type="RayCast2D" parent="."]
+target_position = Vector2(0, 19)
