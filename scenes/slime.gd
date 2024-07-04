@@ -10,6 +10,7 @@ var direction = 1
 @onready var rc_down = $RCDown
 @onready var rc_up = $RCUp
 
+
 func _process(delta):
 	
 	if rc_right.is_colliding():
@@ -19,7 +20,6 @@ func _process(delta):
 	if rc_left.is_colliding():
 		direction = 1
 		slime.flip_h = true
-		
-	print("Enemy is moving")
+	
 	position.x += SPEED * delta * direction
 	
