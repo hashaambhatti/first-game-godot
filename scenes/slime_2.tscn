@@ -51,6 +51,7 @@ position = Vector2(-1, -5)
 scale = Vector2(0.8125, 0.98)
 sprite_frames = SubResource("SpriteFrames_q2b05")
 frame_progress = 0.28913
+flip_h = true
 
 [node name="killzone" parent="." instance=ExtResource("2_gfr1p")]
 
