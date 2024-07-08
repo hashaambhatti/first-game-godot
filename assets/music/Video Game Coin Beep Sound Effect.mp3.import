@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpjxt530njenh"
+path="res://.godot/imported/Video Game Coin Beep Sound Effect.mp3-411f3fb11f870894ed480f99b7e62c03.mp3str"
+
+[deps]
+
+source_file="res://assets/music/Video Game Coin Beep Sound Effect.mp3"
+dest_files=["res://.godot/imported/Video Game Coin Beep Sound Effect.mp3-411f3fb11f870894ed480f99b7e62c03.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

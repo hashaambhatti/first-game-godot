@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dtd7tl4j7qte3"]
+
+[ext_resource type="AudioStream" uid="uid://dpvr0tvlbert5" path="res://assets/music/Sweden.mp3" id="1_hjksh"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_hjksh")
+volume_db = -10.095
+autoplay = true

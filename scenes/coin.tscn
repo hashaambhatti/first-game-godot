@@ -1,7 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://shupuft6gwd6"]
+[gd_scene load_steps=11 format=3 uid="uid://shupuft6gwd6"]
 
 [ext_resource type="Texture2D" uid="uid://bptrleyc1dxje" path="res://assets/sprites/MonedaP.png" id="1_5mipn"]
 [ext_resource type="Script" path="res://scripts/coin.gd" id="2_grb0n"]
+[ext_resource type="AudioStream" uid="uid://cpjxt530njenh" path="res://assets/music/Video Game Coin Beep Sound Effect.mp3" id="3_hhrna"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kfcux"]
 atlas = ExtResource("1_5mipn")
@@ -63,6 +64,9 @@ frame_progress = 0.761576
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_2gjre")
+
+[node name="pickupSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_hhrna")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="draw" from="." to="." method="_on_draw"]
