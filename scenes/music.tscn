@@ -2,7 +2,7 @@
 
 [ext_resource type="AudioStream" uid="uid://dpvr0tvlbert5" path="res://assets/music/Sweden.mp3" id="1_hjksh"]
 
-[node name="music" type="AudioStreamPlayer2D"]
+[node name="music" type="AudioStreamPlayer"]
 stream = ExtResource("1_hjksh")
-volume_db = -10.095
+volume_db = -10.0
 autoplay = true

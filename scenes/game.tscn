@@ -998,18 +998,6 @@ text = "JUMP!
 The floor doesn't bite."
 horizontal_alignment = 1
 
-[node name="Label4" type="Label" parent="Label4"]
-layout_mode = 0
-offset_left = 4304.0
-offset_top = 208.0
-offset_right = 4488.0
-offset_bottom = 216.0
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("11_bug8i")
-theme_override_font_sizes/font_size = 8
-text = "YOU COMPLETED THE GAME!"
-horizontal_alignment = 1
-
 [node name="slime3" parent="." instance=ExtResource("12_iur4r")]
 position = Vector2(1704, -20)
 
@@ -1063,3 +1051,13 @@ position = Vector2(6664, -324)
 
 [node name="slime20" parent="." instance=ExtResource("6_lfd42")]
 position = Vector2(6776, -324)
+
+[node name="Label5" type="Label" parent="."]
+offset_left = 6992.0
+offset_top = -8.0
+offset_right = 7176.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("11_bug8i")
+theme_override_font_sizes/font_size = 8
+text = "YOU COMPLETED THE GAME!"
+horizontal_alignment = 1
