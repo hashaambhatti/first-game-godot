@@ -1,12 +1,14 @@
 extends Node2D
 
-const SPEED = 60
+const SPEED = 50
 
 var direction = 1
 
 @onready var rc_left = $RCLeft
 @onready var rc_right = $RCRight
 @onready var slime = $AnimatedSprite2D
+@onready var rc_down = $RCDown
+@onready var rc_up = $RCUp
 
 
 func _process(delta):
@@ -21,4 +23,3 @@ func _process(delta):
 	
 	position.x += SPEED * delta * direction
 	
-

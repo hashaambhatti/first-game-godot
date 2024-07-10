@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://36tp4s11p4pv"]
 
 [ext_resource type="Texture2D" uid="uid://bjfaqtitob726" path="res://assets/sprites/slime-Sheet.png" id="1_l86hj"]
-[ext_resource type="Script" path="res://scenes/slime_2.gd" id="1_p42nb"]
+[ext_resource type="Script" path="res://scripts/slime_2.gd" id="1_p42nb"]
 [ext_resource type="PackedScene" uid="uid://8e16c3mbe64g" path="res://scenes/killzone.tscn" id="2_gfr1p"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_lihwo"]
@@ -41,17 +41,17 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_dx7q1"]
-radius = 7.0
+radius = 5.0
 
 [node name="slime2" type="Node2D"]
+position = Vector2(0, -5)
 script = ExtResource("1_p42nb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, -5)
-scale = Vector2(0.8125, 0.98)
+position = Vector2(7.10543e-15, -2)
+scale = Vector2(0.53125, 0.665)
 sprite_frames = SubResource("SpriteFrames_q2b05")
-frame_progress = 0.28913
-flip_h = true
+frame_progress = 0.229722
 
 [node name="killzone" parent="." instance=ExtResource("2_gfr1p")]
 
@@ -59,7 +59,7 @@ flip_h = true
 shape = SubResource("CircleShape2D_dx7q1")
 
 [node name="RCLeft" type="RayCast2D" parent="."]
-target_position = Vector2(-13, 0)
+target_position = Vector2(-8, 0)
 
 [node name="RCRight" type="RayCast2D" parent="."]
-target_position = Vector2(12, 0)
+target_position = Vector2(8, 0)
